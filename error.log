@@ -1,0 +1,109 @@
+
+[2021-09-11 18:21:24] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 30, in <module>
+    main()
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 12, in main
+    Fr = B.getFrame('F')
+AttributeError: 'cefpython_py39.PyBrowser' object has no attribute 'getFrame'
+
+
+[2021-09-11 18:21:59] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 30, in <module>
+    main()
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 12, in main
+    Fr = B.GetFrame('F')
+  File "browser.pyx", line 429, in cefpython_py39.PyBrowser.GetFrame
+  File "browser.pyx", line 434, in cefpython_py39.PyBrowser.GetFrame
+  File "frame.pyx", line 27, in cefpython_py39.GetPyFrame
+Exception: GetPyFrame(): CefFrame reference is NULL
+
+
+[2021-09-11 18:22:39] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 30, in <module>
+    main()
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 13, in main
+    print( Fr.GetText() )
+TypeError: PyFrame.GetText() takes exactly one argument (0 given)
+
+
+[2021-09-11 18:29:10] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 32, in <module>
+    main()
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 14, in main
+    Fr.GetText(S)
+  File "frame.pyx", line 194, in cefpython_py39.PyFrame.GetText
+  File "frame.pyx", line 195, in cefpython_py39.PyFrame.GetText
+  File "string_visitor.pyx", line 51, in cefpython_py39.CreateStringVisitor
+Exception: userStringVisitor object missing
+
+
+[2021-09-11 18:41:09] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 35, in <module>
+    main()
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 18, in main
+    F.getSource(V)
+AttributeError: 'cefpython_py39.PyFrame' object has no attribute 'getSource'
+
+
+[2021-09-11 18:50:17] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 24, in <module>
+    LH.OnLoadingStateChange( B )
+TypeError: OnLoadingStateChange() missing 1 required positional argument: 'is_loading'
+
+
+[2021-09-11 19:14:22] Traceback (most recent call last):
+  File "load_handler.pyx", line 20, in cefpython_py39.LoadHandler_OnLoadingStateChange
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\LeaderBoardGenerator.py", line 20, in OnLoadingStateChange
+    browser.GetMainFrame().GetText(V)
+NameError: name 'V' is not defined
+
+
+[2021-09-11 21:20:53] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 7, in <module>
+    for hacker in (LeaderBoardJsonObj['models'][1:len(LeaderBoardJsonObj['models'])-1]+",").split('},'):
+TypeError: can only concatenate list (not "str") to list
+
+
+[2021-09-11 21:21:32] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 8, in <module>
+    hacker = json.loads( hacker )
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+
+
+[2021-09-11 21:33:17] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 8, in <module>
+    LeaderBoardJsonObj = json.loads( LeaderBoardJsonText )
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+[2021-09-11 21:33:32] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 9, in <module>
+    LeaderBoardJsonObj = json.loads( LeaderBoardJsonText )
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+[2021-09-11 23:14:21] Traceback (most recent call last):
+  File "D:\Project Buffer\Collstuff\WEEKLY CODING CHALLENGE\Software\DocumentMaker2\DocMaker2.py", line 18, in <module>
+    LeaderBoardJsonObj = json.loads( LeaderBoardJsonText )
+  File "C:\Program Files\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Program Files\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Program Files\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
